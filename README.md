@@ -7,7 +7,7 @@
 | Skill | Description |
 |-------|-------------|
 | [`check-pr`](check-pr/) | Check a PR for unresolved comments, failing checks, incomplete description. Fix and resolve. |
-| [`greptimize`](greptimize/) | Loop: trigger Greptile review, fix comments, re-review — until 5/5 confidence and zero comments. |
+| [`greploop`](greploop/) | Loop: trigger Greptile review, fix comments, re-review — until 5/5 confidence and zero comments. |
 
 ## Install
 
@@ -25,7 +25,7 @@ Skills are auto-discovered from the directory. Each subfolder with a `SKILL.md` 
 
 ## Usage
 
-Invoke by name in your agent (e.g. `/check-pr 123` or `/greptimize`). If no PR number is given, both skills auto-detect the PR for the current branch.
+Invoke by name in your agent (e.g. `/check-pr 123` or `/greploop`). If no PR number is given, both skills auto-detect the PR for the current branch.
 
 ## License
 

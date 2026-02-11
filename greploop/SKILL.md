@@ -1,5 +1,5 @@
 ---
-name: greptimize
+name: greploop
 description: >
   Iteratively improves a PR until Greptile gives it a 5/5 confidence score with zero
   unresolved comments. Triggers Greptile review, fixes all actionable comments, pushes,
@@ -13,7 +13,7 @@ metadata:
 allowed-tools: Bash(gh:*) Bash(git:*)
 ---
 
-# Greptimize
+# Greploop
 
 Iteratively fix a PR until Greptile gives a perfect review: 5/5 confidence, zero unresolved comments.
 
@@ -124,7 +124,7 @@ mutation {
 
 ```bash
 git add -A
-git commit -m "address greptile review feedback (iteration N)"
+git commit -m "address greptile review feedback (greploop iteration N)"
 git push
 ```
 
@@ -146,7 +146,7 @@ If the loop exited due to max iterations, list any remaining unresolved comments
 ## Output format
 
 ```
-Greptimize complete.
+Greploop complete.
   Iterations:    2
   Confidence:    5/5
   Resolved:      7 comments
@@ -156,7 +156,7 @@ Greptimize complete.
 If not fully resolved:
 
 ```
-Greptimize stopped after 5 iterations.
+Greploop stopped after 5 iterations.
   Confidence:    4/5
   Resolved:      12 comments
   Remaining:     2
